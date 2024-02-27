@@ -1,0 +1,96 @@
+body{
+    padding: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    text-align: center;
+    margin: 50px 20px;
+    
+}
+
+.input-btn{
+    margin-bottom: 20px;
+    text-align: center;
+    position: sticky;
+    top: 50px;
+    z-index: 1000;
+}
+
+.input-btn input{
+    padding: 10px 15px;
+    outline: none;
+}
+
+.input-btn button{
+    padding: 8px 15px;
+    background: rgb(110, 189, 110);
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+
+.c3 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px; /* Set the width of the card */
+  }
+  
+  .img-controller {
+    overflow: hidden;
+  }
+  
+  .img-controller img {
+    width: 100%; /* Set the width to 50% */
+    height: 50%; /* Set the height to 50% */
+    display: block;
+  }
+  
+  .c3 p {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .c3 p span {
+    margin-right: 10px;
+  }
+  
+  .c3 p:last-child {
+    margin-bottom: 10px;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .c2 {
+        grid-template-columns: 1fr; /* Change to a single column for mobile */
+    }
+
+    .c3 {
+        width: 100%; /* Make the card width 100% for mobile */
+    }
+}
